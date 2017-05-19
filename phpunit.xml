@@ -6,7 +6,7 @@
 			stopOnFailure="true">
 			<testsuites>
 				<testsuite name="EVStation Tests">
-					<directory>tests</directory>
+					<directory>./tests</directory>
 				</testsuite>
 			</testsuites>
 </phpunit>
