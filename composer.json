@@ -1,0 +1,23 @@
+{
+    "name": "johnathanmiller/evstation-php",
+    "description": "PHP API wrapper for locating electric vehicle charging stations on NREL",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Johnathan Miller",
+            "email": "hello@johnathanmiller.com",
+            "homepage": "https://johnathanmiller.com"
+        }
+    ],
+    "require": {
+		"php": ">=5.4"
+    },
+	"require-dev": {
+		"phpunit/phpunit": "5.2.*"
+    },
+	"autoload": {
+        "psr-4": {
+            "JohnathanMiller\\EVStation\\": "src/"
+        }
+    }
+}
