@@ -14,7 +14,7 @@
 
 use \JohnathanMiller\EVStation\EVStation;
 
-class EVStationTest extends PHPUnit_Framework_TestCase {
+class EVStationTest extends \PHPUnit_Framework_TestCase {
 
 	private $evStation;
 
