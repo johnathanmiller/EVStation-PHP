@@ -10,4 +10,3 @@ before_script:
   composer install
 script: 
   - vendor/bin/phpunit
-  - phpunit --bootstrap ./src/EVStation.php ./tests/EVStationTest.php
