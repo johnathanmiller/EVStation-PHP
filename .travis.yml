@@ -8,4 +8,6 @@ php:
   - hhvm
 before_script:
   composer install
-script: phpunit --bootstrap ./src/EVStation.php ./tests/EVStationTest.php
+script: 
+  - vendor/bin/phpunit
+  - phpunit --bootstrap ./src/EVStation.php ./tests/EVStationTest.php
