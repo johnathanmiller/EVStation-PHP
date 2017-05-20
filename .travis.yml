@@ -7,7 +7,8 @@ php:
   - 7.1
   - hhvm
 before_install:
-  - if [[ ${TRAVIS_PHP_VERSION:0:3} == '5.4' ]] || [[ ${TRAVIS_PHP_VERSION:0:3} == '5.5' ]]; then composer require --dev --no-update phpunit/phpunit ~4; fi
+  - if [[ ${TRAVIS_PHP_VERSION:0:3} == '5.4' ]]; then composer require --dev --no-update symfony/yaml ~2.8; fi
+  - if [[ ${TRAVIS_PHP_VERSION:0:3} == '5.4' || ${TRAVIS_PHP_VERSION:0:3} == '5.5' ]]; then composer require --dev --no-update phpunit/phpunit ~4; fi
 install:
   - travis_retry composer install --no-interaction --ignore-platform-reqs
 before_script:
