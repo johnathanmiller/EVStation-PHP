@@ -1,4 +1,7 @@
 # EVStation PHP
+
+[![Build Status](https://travis-ci.org/johnathanmiller/EVStation-PHP.svg?branch=master)](https://travis-ci.org/johnathanmiller/EVStation-PHP)
+
 PHP API wrapper for locating electric vehicle charging stations on NREL.
 National Renewable Energy Laboratory (NREL) API v1: https://developer.nrel.gov
 Get your API Key at https://developer.nrel.gov/signup/
