@@ -6,20 +6,29 @@ PHP API wrapper for locating electric vehicle charging stations on NREL.
 National Renewable Energy Laboratory (NREL) API v1: https://developer.nrel.gov
 Get your API Key at https://developer.nrel.gov/signup/
 
+## Rate Limiting
+https://developer.nrel.gov/docs/rate-limits/
+
 ## Installation
-You can install evstation-php with Composer
+Download evstation-php from GitHub or install using Composer
 ```
 composer require johnathanmiller/evstation-php
 ```
-
-## Examples
-
+Import into namespace environment
 ```php
 use JohnathanMiller\EVStation\EVStation;
-
-$evStation = new EVStation('YOUR_API_KEY');
+```
+or include into your project using the require function
+```php
+require 'EVStation.php';
+```
+**Instantiate EVStation**
+You'll need to pass in two arguments into EVStation. The first parameter is expecting an API key to make successful requests and the second parameter is used to format the request, `json` or `xml`.
+```php
+$evStation = new EVStation('YOUR_API_KEY', 'json');
 ```
 
+## Examples
 ### Get All Stations
 ```php
 $evStation->getAll(['zip' => 98004], 10);
